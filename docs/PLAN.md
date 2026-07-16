@@ -12,12 +12,12 @@ Abordagem **UI-first**: construímos toda a interface com dados mockados antes d
 - **Branch**: `milestone/01-setup-inicial`
 - **Objetivo**: preparar o projeto Next.js com toda a base técnica e estrutura de pastas antes de qualquer feature.
 - **Entregas**:
-  - [ ] Projeto Next.js 14 (App Router) + TypeScript 5 inicializado
-  - [ ] Tailwind CSS configurado
-  - [ ] shadcn/ui inicializado com tema base
-  - [ ] ESLint + Prettier configurados
-  - [ ] Estrutura de pastas criada conforme `CLAUDE.md` (`src/app`, `src/components`, `src/lib`, `src/types`, `supabase/`)
-  - [ ] Repositório criado no GitHub e primeiro push de `main`
+  - [x] Projeto Next.js 14 (App Router) + TypeScript 5 inicializado
+  - [x] Tailwind CSS configurado
+  - [x] shadcn/ui inicializado com tema base
+  - [x] ESLint + Prettier configurados
+  - [x] Estrutura de pastas criada conforme `CLAUDE.md` (`src/app`, `src/components`, `src/lib`, `src/types`, `supabase/`)
+  - [x] Repositório criado no GitHub e primeiro push de `main`
 - **Commit final**: `chore: setup inicial do projeto Next.js, Tailwind e shadcn/ui`
 
 ---
