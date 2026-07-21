@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { KanbanSquare, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Logo } from "@/components/shared/logo";
 import type { Workspace } from "@/types/workspace";
 import { SidebarNav } from "./sidebar-nav";
 import { WorkspaceSwitcher } from "./workspace-switcher";
@@ -27,8 +28,7 @@ export function MobileNav({ workspaceSlug, workspaces }: MobileNavProps) {
       </SheetTrigger>
       <SheetContent side="left" className="w-72 p-0">
         <div className="flex h-14 items-center gap-2 border-b px-4">
-          <KanbanSquare className="size-5 text-primary" />
-          <span className="font-semibold">PipeFlow</span>
+          <Logo size="sm" />
         </div>
         <div className="p-3">
           <WorkspaceSwitcher

@@ -29,7 +29,7 @@ export function SidebarNav({ workspaceSlug, onNavigate }: SidebarNavProps) {
             className={cn(
               "flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium transition-colors",
               isActive
-                ? "bg-secondary text-secondary-foreground"
+                ? "bg-gradient-to-r from-primary/10 to-transparent text-foreground"
                 : "text-muted-foreground hover:bg-secondary/50 hover:text-foreground",
             )}
           >
