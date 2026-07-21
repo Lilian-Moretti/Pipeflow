@@ -27,25 +27,55 @@
   }
 
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
+    --background: 240 8% 5%;
+    --foreground: 0 0% 91%;
+    --card: 240 5% 8%;
+    --card-foreground: 0 0% 91%;
+    --popover: 240 5% 8%;
+    --popover-foreground: 0 0% 91%;
+    --primary: 76 100% 60%;
+    --primary-foreground: 240 8% 5%;
+    --secondary: 240 7% 11%;
+    --secondary-foreground: 0 0% 91%;
+    --muted: 240 7% 11%;
+    --muted-foreground: 240 2% 55%;
+    --accent: 240 7% 11%;
+    --accent-foreground: 0 0% 91%;
+    --destructive: 355 100% 64%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
+    --border: 240 5% 17%;
+    --input: 240 5% 17%;
+    --ring: 76 100% 60%;
+
+    /* PipeFlow brand extras — not part of the shadcn token set */
+    --border-subtle: 240 6% 13%;
+    --text-muted: 240 2% 34%;
+    --positive: 145 67% 51%;
+    --cool: 227 100% 68%;
+    --warm: 16 100% 60%;
+  }
+}
+
+@layer utilities {
+  @keyframes fade-slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-slide-up {
+    animation: fade-slide-up 0.4s ease-out both;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-slide-up {
+      animation: none;
+    }
   }
 }
 

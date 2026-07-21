@@ -14,9 +14,12 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)"],
+        display: ["var(--font-display)"],
+        mono: ["var(--font-mono)"],
       },
       colors: {
         border: "hsl(var(--border))",
+        "border-subtle": "hsl(var(--border-subtle))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
@@ -48,6 +51,17 @@ const config: Config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        positive: "hsl(var(--positive))",
+        cool: "hsl(var(--cool))",
+        warm: "hsl(var(--warm))",
+        stage: {
+          1: "#3B82F6",
+          2: "#06B6D4",
+          3: "#F59E0B",
+          4: "#F97316",
+          5: "#22C55E",
+          6: "#EF4444",
         },
       },
       borderRadius: {
